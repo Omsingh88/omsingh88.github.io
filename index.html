@@ -5,68 +5,151 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Om Singh - Portfolio</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; background: #f9f9f9; color: #333; }
-  h1, h2 { color: #2c3e50; }
-  a { color: #2980b9; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .project { margin-bottom: 20px; }
-  header, footer { text-align: center; margin-bottom: 40px; }
-  footer { font-size: 0.9em; color: #777; }
-  .certificates { margin-top: 30px; }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px 40px 20px;
+    background: #f4f7fa;
+    color: #2c3e50;
+    line-height: 1.65;
+  }
+  header, footer {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #34495e;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+  header p a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #2980b9;
+    transition: color 0.3s ease;
+  }
+  header p a:hover {
+    color: #1c5980;
+  }
+  h2 {
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #1a3a66;
+  }
+  .section-content {
+    margin-bottom: 40px;
+  }
+  .project {
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .project:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+  .project h3 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #2c3e50;
+  }
+  .project h3 a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  .project h3 a:hover {
+    text-decoration: underline;
+  }
+  .project p {
+    margin: 8px 0 0 0;
+    color: #555;
+  }
+  .certificates p {
+    font-size: 1.1rem;
+  }
+  .certificates a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .certificates a:hover {
+    text-decoration: underline;
+  }
+  footer p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
 </style>
 </head>
 <body>
 <header>
   <h1>Om Singh</h1>
   <p>
-    <a href="mailto:omsingh.career@gmail.com">omsingh.career@gmail.com</a> | 
-    <a href="https://linkedin.com/in/om-singh01">LinkedIn</a> | 
-    <a href="https://github.com/omsingh88">GitHub</a> | 
+    <a href="mailto:omsingh.career@gmail.com">Email</a> |
+    <a href="https://linkedin.com/in/om-singh01" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+    <a href="https://github.com/omsingh88" target="_blank" rel="noopener noreferrer">GitHub</a> |
     <a href="https://medium.com/%40Omsingh20" target="_blank" rel="noopener noreferrer">Medium</a>
   </p>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>
-    TechOps Engineer with hands-on experience managing production AWS infrastructure, monitoring microservices, and optimizing cloud costs. Skilled in Kubernetes, Terraform, automation, and incident response to improve system reliability and operational efficiency.
-  </p>
+  <div class="section-content">
+    <p>
+      TechOps Engineer with experience managing production AWS infrastructure, monitoring microservices, and optimizing cloud costs.
+      Skilled in Kubernetes, Terraform, automation, and incident response to improve system reliability and operational efficiency.
+    </p>
+  </div>
 </section>
 
 <section>
   <h2>Projects</h2>
+  <div class="section-content">
+    <div class="project">
+      <h3><a href="https://github.com/omsingh88/AWS---VPC-Public-Private-Subnet-Configuration-in-Production-" target="_blank" rel="noopener noreferrer">AWS - VPC Public-Private Subnet Architecture</a></h3>
+      <p>Designed and implemented a secure VPC architecture with public/private subnets, route tables, and an internet gateway for high availability and isolation.</p>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/omsingh88/AWS---VPC-Public-Private-Subnet-Configuration-in-Production-" target="_blank" rel="noopener noreferrer">AWS - VPC Public-Private Subnet Architecture</a></h3>
-    <p>Designed and implemented a secure VPC architecture with public/private subnets, route tables, and an internet gateway for high availability and isolation.</p>
-  </div>
+    <div class="project">
+      <h3><a href="https://github.com/omsingh88/AWS-Cloud-Cost-Optimization---Identifying-Stale-Resources" target="_blank" rel="noopener noreferrer">AWS Cloud Cost Optimization - EBS Snapshot Cleanup</a></h3>
+      <p>Developed AWS Lambda using Python &amp; Boto3 to automate deletion of stale EBS snapshots, reducing storage costs and manual errors by 30%.</p>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/omsingh88/AWS-Cloud-Cost-Optimization---Identifying-Stale-Resources" target="_blank" rel="noopener noreferrer">AWS Cloud Cost Optimization - EBS Snapshot Cleanup</a></h3>
-    <p>Developed AWS Lambda using Python &amp; Boto3 to automate deletion of stale EBS snapshots, reducing storage costs and manual errors by 30%.</p>
-  </div>
+    <div class="project">
+      <h3><a href="https://github.com/omsingh88/Deployment-of-2048-Game-Application-on-Amazon-EKS-Using-ALB-Ingress-Controller-" target="_blank" rel="noopener noreferrer">Production-Grade App Deployment on Amazon EKS</a></h3>
+      <p>Deployed a scalable containerized application using EKS Fargate, Helm, and eksctl with ALB Ingress Controller for secure external access and traffic management.</p>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/omsingh88/Deployment-of-2048-Game-Application-on-Amazon-EKS-Using-ALB-Ingress-Controller-" target="_blank" rel="noopener noreferrer">Production-Grade App Deployment on Amazon EKS</a></h3>
-    <p>Deployed a scalable containerized application using EKS Fargate, Helm, and eksctl with ALB Ingress Controller for secure external access and traffic management.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/Omsingh88/serverless-ec2-scheduler" target="_blank" rel="noopener noreferrer">Serverless EC2 Scheduler</a></h3>
-    <p>Automated start/stop of EC2 instances during company working hours using AWS Lambda triggered by CloudWatch Events, creating a fully serverless and cost-efficient scheduling solution.</p>
+    <div class="project">
+      <h3><a href="https://github.com/Omsingh88/serverless-ec2-scheduler" target="_blank" rel="noopener noreferrer">Serverless EC2 Scheduler</a></h3>
+      <p>Automated start/stop of EC2 instances during company working hours using AWS Lambda triggered by CloudWatch Events, creating a fully serverless and cost-efficient scheduling solution.</p>
+    </div>
   </div>
 </section>
 
 <section class="certificates">
   <h2>Certificates</h2>
-  <p>
-    <a href="https://www.credly.com/badges/ae1d152c-8497-4af2-8d3e-e5fc4a375671/public_url" target="_blank" rel="noopener noreferrer">Certified AWS Cloud Practitioner (CLF-02)</a>
-  </p>
+  <div class="section-content">
+    <p><a href="https://www.credly.com/badges/ae1d152c-8497-4af2-8d3e-e5fc4a375671/public_url" target="_blank" rel="noopener noreferrer">Certified AWS Cloud Practitioner (CLF-02)</a></p>
+    <p><a href="https://learn.microsoft.com/en-us/users/omsingh-6122/credentials/d4edaf0fce59f424" target="_blank" rel="noopener noreferrer">Azure AI Fundamentals (AI-900)</a></p>
+    <p><a href="https://www.credly.com/badges/52355b8a-27c6-4eac-8c93-336e916d1728/public_url" target="_blank" rel="noopener noreferrer">AWS re/Start Graduate</a></p>
+  </div>
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Feel free to reach out via email or connect on LinkedIn!</p>
+  <div class="section-content">
+    <p>Feel free to reach out via email or connect on LinkedIn!</p>
+  </div>
 </section>
 
 <footer>
