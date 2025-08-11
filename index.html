@@ -5,22 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Om Singh - Portfolio</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; background: #f9f9f9; color: #333; }
-  h1, h2 { color: #2c3e50; }
-  a { color: #2980b9; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .project { margin-bottom: 20px; }
-  header, footer { text-align: center; margin-bottom: 40px; }
-  footer { font-size: 0.9em; color: #777; }
+  /* Reset some default styles */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header, footer {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  header h1 {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 2.8rem;
+    margin-bottom: 0.2em;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  header a {
+    color: #0073e6;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  header a:hover {
+    color: #004a99;
+    text-decoration: underline;
+  }
+
+  h2 {
+    border-bottom: 3px solid #0073e6;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-weight: 700;
+  }
+
+  .project {
+    background-color: #fff;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .project:hover {
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
+  }
+
+  .project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #00509e;
+  }
+
+  .project h3 a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .project h3 a:hover {
+    text-decoration: underline;
+    color: #0073e6;
+  }
+
+  .project p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  section p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #444;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    color: #777;
+  }
 </style>
 </head>
 <body>
 <header>
   <h1>Om Singh</h1>
   <p>
-    <a href="mailto:omsingh.career@gmail.com">omsingh.career@gmail.com</a> | 
-    <a href="https://linkedin.com/in/om-singh01">LinkedIn</a> | 
-    <a href="https://github.com/omsingh88">GitHub</a>
+    <a href="mailto:omsingh.career@gmail.com" aria-label="Send email to Om Singh">omsingh.career@gmail.com</a> |
+    <a href="https://linkedin.com/in/om-singh01" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a> |
+    <a href="https://github.com/omsingh88" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
   </p>
 </header>
 
@@ -33,17 +126,17 @@
   <h2>Projects</h2>
 
   <div class="project">
-    <h3><a href="https://github.com/omsingh88/AWS---VPC-Public-Private-Subnet-Configuration-in-Production-">AWS - VPC Public-Private Subnet Architecture</a></h3>
+    <h3><a href="https://github.com/omsingh88/AWS---VPC-Public-Private-Subnet-Configuration-in-Production-" target="_blank" rel="noopener noreferrer">AWS - VPC Public-Private Subnet Architecture</a></h3>
     <p>Designed and implemented a secure VPC architecture with public/private subnets, route tables, and an internet gateway for high availability and isolation.</p>
   </div>
 
   <div class="project">
-    <h3><a href="https://github.com/omsingh88/AWS-Cloud-Cost-Optimization---Identifying-Stale-Resources">AWS Cloud Cost Optimization - EBS Snapshot Cleanup</a></h3>
-    <p>Developed AWS Lambda using Python & Boto3 to automate deletion of stale EBS snapshots, reducing storage costs and manual errors by 30%.</p>
+    <h3><a href="https://github.com/omsingh88/AWS-Cloud-Cost-Optimization---Identifying-Stale-Resources" target="_blank" rel="noopener noreferrer">AWS Cloud Cost Optimization - EBS Snapshot Cleanup</a></h3>
+    <p>Developed AWS Lambda using Python &amp; Boto3 to automate deletion of stale EBS snapshots, reducing storage costs and manual errors by 30%.</p>
   </div>
 
   <div class="project">
-    <h3><a href="https://github.com/omsingh88/Deployment-of-2048-Game-Application-on-Amazon-EKS-Using-ALB-Ingress-Controller-">Production-Grade App Deployment on Amazon EKS</a></h3>
+    <h3><a href="https://github.com/omsingh88/Deployment-of-2048-Game-Application-on-Amazon-EKS-Using-ALB-Ingress-Controller-" target="_blank" rel="noopener noreferrer">Production-Grade App Deployment on Amazon EKS</a></h3>
     <p>Deployed a scalable containerized application using EKS Fargate, Helm, and eksctl with ALB Ingress Controller for secure external access and traffic management.</p>
   </div>
 </section>
