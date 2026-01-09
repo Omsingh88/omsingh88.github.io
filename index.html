@@ -3,157 +3,202 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Om Singh - Portfolio</title>
+<title>Om Singh | Cloud & DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   body {
-    font-family: 'Roboto', Arial, sans-serif;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px 40px 20px;
-    background: #f4f7fa;
-    color: #2c3e50;
-    line-height: 1.65;
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.7;
   }
-  header, footer {
+
+  header {
     text-align: center;
-    margin-bottom: 50px;
-    color: #34495e;
+    margin-bottom: 60px;
   }
+
   header h1 {
-    font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
+
+  header h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2563eb;
+  }
+
   header p a {
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: 500;
-    color: #2980b9;
-    transition: color 0.3s ease;
-  }
-  header p a:hover {
-    color: #1c5980;
-  }
-  h2 {
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 6px;
-    margin-bottom: 25px;
-    font-weight: 700;
-    color: #1a3a66;
-  }
-  .section-content {
-    margin-bottom: 40px;
-  }
-  .project {
-    margin-bottom: 30px;
-    background: #ffffff;
-    padding: 20px 25px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-  }
-  .project:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  }
-  .project h3 {
-    margin-top: 0;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: #2c3e50;
-  }
-  .project h3 a {
-    color: #2980b9;
-    text-decoration: none;
-  }
-  .project h3 a:hover {
-    text-decoration: underline;
-  }
-  .project p {
-    margin: 8px 0 0 0;
-    color: #555;
-  }
-  .certificates p {
-    font-size: 1.1rem;
-  }
-  .certificates a {
-    color: #2980b9;
+    margin: 0 10px;
+    color: #2563eb;
     text-decoration: none;
     font-weight: 600;
   }
-  .certificates a:hover {
-    text-decoration: underline;
+
+  section {
+    margin-bottom: 60px;
   }
-  footer p {
+
+  h3 {
+    border-bottom: 3px solid #2563eb;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  footer {
+    text-align: center;
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: #6b7280;
   }
 </style>
 </head>
+
 <body>
+
 <header>
   <h1>Om Singh</h1>
+  <h2>TechOps Engineer | AWS Certified Solutions Architect – Associate | Cloud / DevOps</h2>
   <p>
     <a href="mailto:omsingh.career@gmail.com">Email</a> |
-    <a href="https://linkedin.com/in/om-singh01" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-    <a href="https://github.com/omsingh88" target="_blank" rel="noopener noreferrer">GitHub</a> |
-    <a href="https://medium.com/%40Omsingh20" target="_blank" rel="noopener noreferrer">Medium</a>
+    <a href="https://linkedin.com/in/om-singh01" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/omsingh88" target="_blank">GitHub</a> |
+    <a href="https://medium.com/@Omsingh20" target="_blank">Medium</a>
   </p>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <div class="section-content">
+  <h3>Professional Summary</h3>
+  <div class="card">
     <p>
-      TechOps Engineer experienced in managing production AWS infrastructure, monitoring microservices, and resolving incidents. Skilled in Kubernetes, Terraform, automation, and incident response to enhance system reliability and operational efficiency.
+      Cloud and DevOps-focused TechOps Engineer with hands-on experience supporting production AWS infrastructure and monitoring 100+ microservices. 
+      Strong background in Linux, observability (Prometheus, Grafana, CloudWatch), incident response, and reliability operations.
+      Actively building DevOps and SRE expertise through real-world AWS and Kubernetes projects.
     </p>
   </div>
 </section>
 
-
 <section>
-  <h2>Projects</h2>
-  <div class="section-content">
-    <div class="project">
-      <h3><a href="https://github.com/omsingh88/AWS---VPC-Public-Private-Subnet-Configuration-in-Production-" target="_blank" rel="noopener noreferrer">AWS - VPC Public-Private Subnet Architecture</a></h3>
-      <p>Designed and implemented a secure VPC architecture with public/private subnets, route tables, and an internet gateway for high availability and isolation.</p>
+  <h3>Core Skills</h3>
+  <div class="card skills-grid">
+    <div>
+      <strong>Cloud (AWS)</strong>
+      <ul>
+        <li>EC2, VPC, IAM, ALB, Auto Scaling</li>
+        <li>S3, CloudFront, CloudWatch</li>
+      </ul>
     </div>
 
-    <div class="project">
-      <h3><a href="https://github.com/omsingh88/AWS-Cloud-Cost-Optimization---Identifying-Stale-Resources" target="_blank" rel="noopener noreferrer">AWS Cloud Cost Optimization - EBS Snapshot Cleanup</a></h3>
-      <p>Developed AWS Lambda using Python &amp; Boto3 to automate deletion of stale EBS snapshots, reducing storage costs and manual errors by 30%.</p>
+    <div>
+      <strong>Monitoring & Observability</strong>
+      <ul>
+        <li>Prometheus, Grafana, Alertmanager</li>
+        <li>Elasticsearch, Metabase, Gatus</li>
+      </ul>
     </div>
 
-    <div class="project">
-      <h3><a href="https://github.com/omsingh88/Deployment-of-2048-Game-Application-on-Amazon-EKS-Using-ALB-Ingress-Controller-" target="_blank" rel="noopener noreferrer">Production-Grade App Deployment on Amazon EKS</a></h3>
-      <p>Deployed a scalable containerized application using EKS Fargate, Helm, and eksctl with ALB Ingress Controller for secure external access and traffic management.</p>
+    <div>
+      <strong>Containers & DevOps</strong>
+      <ul>
+        <li>Docker, Kubernetes (EKS)</li>
+        <li>Terraform (basic), Jenkins (basic)</li>
+      </ul>
     </div>
 
-    <div class="project">
-      <h3><a href="https://github.com/Omsingh88/serverless-ec2-scheduler" target="_blank" rel="noopener noreferrer">Serverless EC2 Scheduler</a></h3>
-      <p>Automated start/stop of EC2 instances during company working hours using AWS Lambda triggered by CloudWatch Events, creating a fully serverless and cost-efficient scheduling solution.</p>
+    <div>
+      <strong>Systems & Tools</strong>
+      <ul>
+        <li>Linux troubleshooting (CPU, memory, disk)</li>
+        <li>Git, GitHub, Jira, ServiceNow</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="certificates">
-  <h2>Certificates</h2>
-  <div class="section-content">
-    <p><a href="https://www.credly.com/badges/ae1d152c-8497-4af2-8d3e-e5fc4a375671/public_url" target="_blank" rel="noopener noreferrer">Certified AWS Cloud Practitioner (CLF-02)</a></p>
-    <p><a href="https://learn.microsoft.com/en-us/users/omsingh-6122/credentials/d4edaf0fce59f424" target="_blank" rel="noopener noreferrer">Azure AI Fundamentals (AI-900)</a></p>
-    <p><a href="https://www.credly.com/badges/52355b8a-27c6-4eac-8c93-336e916d1728/public_url" target="_blank" rel="noopener noreferrer">AWS re/Start Graduate</a></p>
+<section>
+  <h3>Professional Experience</h3>
+  <div class="card">
+    <strong>TechOps Engineer – Kotak Cherry</strong>
+    <ul>
+      <li>Monitored 100+ microservices and AWS infrastructure using Prometheus, Grafana, CloudWatch, Metabase, and Gatus.</li>
+      <li>Handled production incidents including API failures (5xx), pod restarts, EC2 spikes, and health check alerts within SLA/SLO.</li>
+      <li>Performed root cause analysis using Elasticsearch logs and metrics correlation, reducing MTTR by ~30%.</li>
+      <li>Executed Linux housekeeping tasks (disk cleanup, memory optimization) to maintain system stability.</li>
+      <li>Collaborated with DevOps teams on Kubernetes deployments and operational improvements.</li>
+    </ul>
   </div>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <div class="section-content">
-    <p>Feel free to reach out via email or connect on LinkedIn!</p>
+  <h3>Projects</h3>
+
+  <div class="card">
+    <strong>AWS VPC – Production-Grade Network Architecture</strong>
+    <ul>
+      <li>Designed secure VPC with public/private subnets, route tables, NAT Gateway, and ALB.</li>
+      <li>Implemented high availability and network isolation following AWS best practices.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>AWS Cost Optimization – EBS Snapshot Cleanup</strong>
+    <ul>
+      <li>Built Lambda automation using Python and Boto3 to identify and delete stale EBS snapshots.</li>
+      <li>Reduced storage cost and manual overhead by ~30%.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Real-Time Application Deployment on Amazon EKS</strong>
+    <ul>
+      <li>Deployed containerized application on EKS Fargate using Ingress and ALB Controller.</li>
+      <li>Configured Kubernetes services and routing for internet-facing traffic.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>Certifications</h3>
+  <div class="card">
+    <ul>
+      <li>AWS Certified Solutions Architect – Associate</li>
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>AWS re/Start Graduate</li>
+    </ul>
   </div>
 </section>
 
 <footer>
   <p>© 2025 Om Singh</p>
 </footer>
+
 </body>
 </html>
