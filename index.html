@@ -10,7 +10,7 @@
 <style>
   body {
     font-family: 'Inter', sans-serif;
-    background: #f5f7fb;
+    background: #eef2f7;
     color: #1f2937;
     max-width: 900px;
     margin: auto;
@@ -26,6 +26,7 @@
   header h1 {
     font-size: 2.8rem;
     margin-bottom: 8px;
+    color: #1f2937;
   }
 
   header h2 {
@@ -39,6 +40,11 @@
     color: #2563eb;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  header p a:hover {
+    color: #1d4ed8;
   }
 
   section {
@@ -50,14 +56,21 @@
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 20px;
+    font-size: 1.4rem;
   }
 
   .card {
     background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
   }
 
   ul {
@@ -71,21 +84,31 @@
 
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
   }
 
   a.cert-link {
     color: #2563eb;
     font-weight: 600;
     text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a.cert-link:hover {
+    color: #1d4ed8;
   }
 
   footer {
     text-align: center;
     font-size: 0.9rem;
     color: #6b7280;
-    margin-top: 40px;
+    margin-top: 50px;
+  }
+
+  /* Section background accent for even sections */
+  section:nth-child(even) .card {
+    background: #f9fafc;
   }
 </style>
 </head>
@@ -96,7 +119,7 @@
   <h1>Om Singh</h1>
   <h2>TechOps Engineer | AWS Certified Solutions Architect – Associate | Cloud / DevOps</h2>
   <p>
-    <a href="mailto:omsingh.career@gmail.com">Email</a> |
+    <a href="mailto:om.singh01@outlook.com">Email</a> |
     <a href="https://linkedin.com/in/om-singh01" target="_blank">LinkedIn</a> |
     <a href="https://github.com/omsingh88" target="_blank">GitHub</a> |
     <a href="https://medium.com/@Omsingh20" target="_blank">Medium</a>
